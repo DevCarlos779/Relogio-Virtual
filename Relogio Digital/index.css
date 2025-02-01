@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.full-screen {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, rgb(201, 148, 156), rgb(187, 51, 176));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.full-screen h1 {
+    font-size: 40px;
+    color: rgb(235, 184, 192);
+}
+
+.relogio {
+    width: 1050px;
+    height: 400px;
+    background-color: transparent;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; */   
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    padding: 30px 40px;
+    gap: 70px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: #320f33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+    
+    
+    
+}
+
+.box h2 {
+    font-size: 70px;
+    color: pink;
+    padding: 30px;
+}
+
+.box p {
+    font-size: 25px;
+    color: pink;
+}
+
+@media (max-width: 1100px) {
+    .relogio {
+        width: 805px;
+        height: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+
+    }
+
+}
+
+@media (max-width: 860px) {
+    .relogio {
+        width: 605px;
+        height: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+}
+
+@media (max-width: 690px) {
+    .relogio {
+        width: 400px;
+        height: 600px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+    }
+
+    .box {
+        height: 160px;
+        gap: 0px;
+    }
+    
+    .box h2{
+        font-size: 50px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 690px) {
+    .relogio {
+        width: 300px;
+        height: 600px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .full-screen h1 {
+        font-size: 30px;
+    }
+
+    .relogio {
+        width: 260px;
+        height: 600px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+    }
+
+}
